@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #123524;
+}
+
+header {
+    padding: 20px 8%;
+    background: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0b4d2b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #123524;
+    font-size: 15px;
+}
+
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #e8f2eb
+    );
+}
+
+
+.hero-text {
+    width: 55%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #0b4d2b;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.primary {
+    background: #0b4d2b;
+    color: white;
+}
+
+
+.secondary {
+    border: 2px solid #c89b3c;
+    color: #0b4d2b;
+}
+
+
+.hero-image {
+    width: 35%;
+}
+
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.intro {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+
+.intro h2 {
+    font-size: 35px;
+    color: #0b4d2b;
+    margin-bottom: 20px;
+}
+
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+footer {
+    background: #0b4d2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+@media(max-width: 768px) {
+
+    nav ul {
+        display: none;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+  }
